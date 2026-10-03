@@ -1,16 +1,21 @@
 # Canil Yannis do Oeste
 
-Landing page responsiva com API local, carrossel, galeria/lightbox, CTAs de WhatsApp e painel de conteúdo.
+Landing page responsiva com painel administrativo e API preparada para Vercel.
 
-## Executar
+## Publicar na Vercel
 
-No PowerShell, defina uma chave administrativa e inicie o servidor:
+1. Envie esta pasta a um repositório GitHub e importe-o na Vercel.
+2. No projeto Vercel, abra **Storage → Create Database → Blob**. Escolha acesso **Public** e conecte-o ao projeto. A Vercel cria `BLOB_READ_WRITE_TOKEN` automaticamente.
+3. Em **Settings → Environment Variables**, crie `ADMIN_TOKEN` com uma senha longa e exclusiva.
+4. Faça o deploy. A primeira gravação pelo painel cria `content/site-data.json` no Blob; até lá, o site usa `data.json` como conteúdo inicial.
+
+Não coloque `BLOB_READ_WRITE_TOKEN` ou `ADMIN_TOKEN` no código ou em arquivos enviados ao GitHub.
+
+## Executar localmente
 
 ```powershell
 $env:ADMIN_TOKEN='defina-uma-chave-forte-aqui'
 node server.js
 ```
 
-Abra `http://localhost:4173`. A Área administrativa solicita essa mesma chave e grava o conteúdo em `data.json`.
-
-Antes de publicar, atualize em `data.json`: WhatsApp, Instagram, localização, fotos reais, cães, filhotes e metadados de domínio. As fotos de demonstração devem ser substituídas pelas fotografias autorizadas do canil.
+Abra `http://localhost:4173`. Para testar a persistência Blob localmente, conecte o projeto com `vercel link` e use `vercel env pull`.
