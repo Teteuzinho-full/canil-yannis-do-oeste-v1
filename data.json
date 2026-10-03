@@ -1,0 +1,12 @@
+{
+  "settings": { "kennelName": "Canil Yannis do Oeste", "whatsapp": "", "instagram": "", "location": "Localização a definir" },
+  "dogs": [
+    { "id": "guardiao", "name": "Nome do macho", "sex": "Macho", "status": "Apresentação", "highlight": "Estrutura, presença e temperamento", "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/%22Prince%22_%287369763074%29.jpg" },
+    { "id": "majestade", "name": "Nome da fêmea", "sex": "Fêmea", "status": "Apresentação", "highlight": "Elegância, equilíbrio e expressão", "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rottweiler.jpg?width=1600" },
+    { "id": "linhagem", "name": "Nome do cão", "sex": "A definir", "status": "Apresentação", "highlight": "Informações em breve", "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rottweiler(dog).jpg?width=1200" }
+  ],
+  "puppies": [
+    { "id": "ninhada-a", "name": "Ninhada em planejamento", "sex": "Informações em breve", "status": "Em planejamento", "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rottweiler%20puppies%20at%203%20weeks%20old.jpg?width=1200" },
+    { "id": "ninhada-b", "name": "Disponibilidade futura", "sex": "Cadastre seu interesse", "status": "Em planejamento", "image": "https://commons.wikimedia.org/wiki/Special:FilePath/01Rottweiler%20puppy.jpg?width=1200" }
+  ]
+}
