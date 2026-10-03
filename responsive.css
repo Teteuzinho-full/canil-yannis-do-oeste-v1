@@ -1,0 +1,59 @@
+/* Ajustes dedicados a celulares pequenos e áreas de toque. */
+@media (max-width: 640px) {
+  body { padding-bottom: 68px; overflow-x: hidden; }
+  header { height: 68px; padding-inline: 18px; }
+  .brand { gap: 8px; font-size: 16px; }
+  .brand img { width: 40px; height: 40px; }
+  .menu { min-width: 48px; min-height: 44px; padding: 0; }
+  nav { top: 68px; padding: 15px 20px 20px; }
+  nav.open { display: grid; }
+  nav a { min-height: 44px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+  nav .nav-cta { justify-content: center; border: 1px solid var(--ink); margin-top: 8px; }
+  .hero { min-height: max(600px, calc(100svh - 68px)); padding: 62px 22px 86px; align-items: flex-end; }
+  .hero-copy { max-width: 100%; }
+  .hero h1 { font-size: clamp(42px, 12vw, 57px); line-height: .98; }
+  .hero .eyebrow { font-size: 9px; line-height: 1.5; max-width: 270px; }
+  .intro { max-width: 310px; font-size: 15px; }
+  .actions { align-items: flex-start; flex-direction: column; gap: 16px; margin-top: 25px; }
+  .button { min-height: 48px; justify-content: space-between; width: 100%; max-width: 285px; }
+  .principles { grid-template-columns: 1fr 1fr; padding: 10px 12px; }
+  .principles article { min-height: 172px; padding: 18px 12px; }
+  .principles h2 { font-size: 17px; margin-top: 18px; }
+  .principles p { font-size: 11px; }
+  .story, .puppies { padding: 70px 22px; }
+  .story { gap: 46px; }
+  .story-image { height: 390px; }
+  .story-image:after { inset: 12px -12px -12px 12px; }
+  .section-head { padding-inline: 22px; margin-bottom: 30px; align-items: flex-end; }
+  .section-head h2 { font-size: clamp(36px, 10vw, 50px); }
+  .carousel-controls button { min-width: 46px; min-height: 46px; }
+  .track { padding: 0 22px 20px; gap: 14px; }
+  .dog-card { min-width: calc(100vw - 58px); }
+  .dog-image { height: 360px; }
+  .dog-info { display: block; padding-top: 15px; }
+  .dog-info h3 { font-size: 25px; }
+  .dog-info p { max-width: 240px; line-height: 1.55; }
+  .status { display: inline-block; margin-top: 11px; }
+  .puppy-grid { grid-template-columns: 1fr; gap: 14px; }
+  .puppy-card { min-height: 360px; }
+  .gallery { padding: 70px 0; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; height: 425px; padding-inline: 22px; gap: 9px; }
+  .gallery-grid img:nth-child(2) { display: block; }
+  .gallery-grid img:nth-child(3) { grid-column: 1 / -1; height: 190px; }
+  .final-cta { min-height: 520px; padding: 65px 22px; }
+  .final-cta h2 { font-size: clamp(40px, 11vw, 52px); }
+  footer { grid-template-columns: 1fr; gap: 28px; padding: 50px 22px 94px; }
+  footer .footer-brand, .copyright { grid-column: auto; }
+  .admin-link { bottom: 73px; right: 22px; }
+  .mobile-bar a { min-height: 56px; display: grid; place-items: center; padding: 12px; }
+}
+@media (max-width: 380px) {
+  .hero { padding-inline: 18px; }
+  .hero h1 { font-size: 42px; }
+  .principles { grid-template-columns: 1fr; padding: 0 18px; }
+  .principles article, .principles article:nth-child(3) { min-height: auto; padding: 18px 0; border: 0; border-bottom: 1px solid var(--line); }
+  .principles h2 { margin: 9px 0 5px; }
+  .dog-card { min-width: calc(100vw - 46px); }
+  .dog-image { height: 325px; }
+  .gallery-grid { padding-inline: 18px; }
+}
